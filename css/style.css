@@ -5,6 +5,10 @@ body {
   font-family: Lato;
 }
 
+a {
+  text-decoration: none;
+}
+
 .inner {
   margin: 0 auto;
 }
@@ -39,10 +43,16 @@ body {
 .header__button {
   background-color: #74cfae;
   color: #fff;
-  cursor: pointer;
   display: block;
   font-size: 12px;
   padding: 14px 12px;
+}
+
+.header__nav {
+  background-color: #74cfae;
+  color: #fff;
+  margin-top: 8px;
+  padding: 10px;
 }
 
 .heading__body {
@@ -131,7 +141,6 @@ body {
 
 .work__footer__button:hover {
   color: #333;
-  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -153,7 +162,7 @@ body {
 
 .skills__images__container {
   font-size: 0;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .skills__image__caption {
@@ -164,6 +173,7 @@ body {
 }
 
 .SNS__body {
+  font-size: 0;
   padding: 200px 0;
   text-align: center;
 }
@@ -206,6 +216,10 @@ body {
 
 .inner {
   max-width: 1100px;
+}
+
+.header__nav {
+  display: none;
 }
 
 .introduction__body {
@@ -271,6 +285,10 @@ body {
   width: 97%;
 }
 
+.header__nav {
+  display: none;
+}
+
 .introduction__body {
   padding: 50px 0 25px;
 }
@@ -284,12 +302,10 @@ body {
   width: 95%;
 }
 
-.work__images__container {
-  text-align: center;
-}
-
 .work__image {
   display: block;
+  margin: 0 auto;
+  max-width: 300px;
 }
 
 .work__image:nth-child(3n+1) {
@@ -322,6 +338,10 @@ body {
   margin-top: 0;
 }
 
+.SNS__content {
+  width: 25%;
+}
+
 }
 
 @media screen and (max-width:766px) {
@@ -335,41 +355,29 @@ body {
 }
 
 .header__menu {
-  border: 2px #f2f2f2 solid;
-  border-radius: 10px;
-  height: 30px;
-  position: relative;
-  width: 50px;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 .menu-line {
-  background-color: #f2f2f2;
+  background-color: #ddd;
+  display: block;
   height: 2px;
-  left: 10px;
-  position: absolute;
+  margin-top: 5px;
   width: 30px;
 }
 
-.menu-line:nth-child(1) {
-  top: 8px;
-}
-
-.menu-line:nth-child(2) {
-  top: 15px;
-}
-
-.menu-line:nth-child(3) {
-  top: 22px;
+.menu-line:first-child {
+  margin-top: 0;
 }
 
 .header__nav {
-  display: block;
+  display: none;
 }
 
-.nav-1 {
-  background-color: #74cfae;
-  height: 40px;
-  width: 100%;
+.header__nav.is-show {
+  display: block;
 }
 
 .heading__body {
@@ -438,7 +446,7 @@ body {
 
 .SNS__body {
   box-sizing: border-box;
-  padding: 50px 15px;
+  padding: 50px 0;
 }
 
 .SNS__content {
