@@ -11,8 +11,6 @@ body {
 
 .header {
   background-color: #fff;
-  box-sizing: border-box;
-  height: 80px;
   left: 0;
   padding: 15px 0;
   position: fixed;
@@ -23,6 +21,7 @@ body {
 
 .header__body {
   display: flex;
+  height: 50px;
   justify-content: space-between;
 }
 
@@ -361,6 +360,16 @@ body {
 
 .menu-line:nth-child(3) {
   top: 22px;
+}
+
+.header__nav {
+  display: block;
+}
+
+.nav-1 {
+  background-color: #74cfae;
+  height: 40px;
+  width: 100%;
 }
 
 .heading__body {
